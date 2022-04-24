@@ -1,0 +1,10 @@
+@use './variables'as v;
+
+@function color($base , $shade) {
+    $color : map-get(map-get(v.$colors,$base),$shade);
+    @return $color;
+}
+
+@function weight($base, $weight) {
+    @return map-get(map-get(v.$font-weight,$base), $weight);
+}
