@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![mobile](./screenshot/Frontend Mentor Sunnyside agency landing page-dekstop.jpg)
+![/screenshot/Frontend Mentor Sunnyside agency landing page-dekstop.jpg](./screenshot/Frontend Mentor Sunnyside agency landing page-dekstop.jpg)
 
 ### Links
 
