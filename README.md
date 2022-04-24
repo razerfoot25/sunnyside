@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./screenshot/dekstop.png)
+![Desktop](./screenshot/desktop.png)
 
 ### Links
 
