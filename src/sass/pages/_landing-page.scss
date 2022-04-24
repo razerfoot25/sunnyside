@@ -1,0 +1,32 @@
+@use "../abstracts/functions" as f;
+@use "../components/media" as m;
+
+body {
+  background: f.color(neutral, 300);
+}
+.landing-page {
+  background-image: url("../images/mobile/image-header.jpg");
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  text-align: center;
+  padding-bottom: 5.5em;
+  h1 {
+    color: f.color(neutral, 300);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    padding-block: 1em;
+  }
+  &__arrow {
+    margin: 2.5em auto;
+    width: 50%;
+    img {
+      margin-inline: auto;
+    }
+  }
+  @include m.breakpoint(medium) {
+    background-image: url("../images/desktop/image-header.jpg");
+    background-size: cover;
+    min-height: 820px;
+  }
+}

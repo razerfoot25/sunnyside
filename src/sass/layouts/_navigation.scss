@@ -1,0 +1,78 @@
+@use "../abstracts/functions" as f;
+@use "../components/media" as m;
+
+header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em;
+
+  nav {
+    display: none;
+  }
+  @include m.breakpoint(medium) {
+    nav {
+      display: block;
+    }
+  }
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: f.color(neutral, 300);
+  position: fixed;
+  inset: 7em 1.5em 0 1.5em;
+  max-height: 300px;
+  margin: 0;
+  padding: 2.5em 0 0 0;
+  gap: 2.3em;
+  &__list {
+    align-self: center;
+    &--title {
+      color: f.color(neutral, 500);
+    }
+  }
+
+  &__border {
+    border-right: 25px solid f.color(neutral, 300);
+    border-top: 25px solid transparent;
+    position: absolute;
+    inset: -25px 0 auto 0;
+    width: 100%;
+  }
+
+  @include m.breakpoint(medium) {
+    flex-direction: row;
+    position: relative;
+    inset: unset;
+    padding-top: 0;
+    background-color: unset;
+
+    &__list {
+      &--title {
+        color: f.color(neutral, 300);
+      }
+    }
+
+    &__border {
+      display: none;
+    }
+  }
+}
+
+.hamburger {
+  margin-left: auto;
+  @include m.breakpoint(medium) {
+    display: none;
+  }
+}
+
+#hamburger {
+  display: none;
+}
+#hamburger:checked {
+  + nav {
+    display: block;
+  }
+}

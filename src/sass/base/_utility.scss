@@ -1,0 +1,26 @@
+@use "../abstracts/functions" as f;
+@use "../components/media" as m;
+.container {
+  margin-inline: auto;
+  max-width: 90rem;
+}
+
+.btn {
+  padding: 0.5em 1.2em 0.7em 1.2em;
+  border-radius: 2em;
+  background: f.color(primary, 400);
+  color: f.color(neutral, 700);
+  font-weight: f.weight(accent, 700);
+
+  &:hover {
+    background: f.color(neutral, 250);
+
+    color: f.color(neutral, 300);
+  }
+}
+
+@include m.breakpoint(medium) {
+  .btn {
+    background: f.color(neutral, 300);
+  }
+}

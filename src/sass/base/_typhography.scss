@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as s;
+@use "../components/media" as m;
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+
+$fraunces: "Fraunces", serif;
+$barlow: "Barlow", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn,
+a,
+strong {
+  font-family: "Fraunces", serif; //accent
+}
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+span,
+p,
+small {
+  font-family: "Barlow", sans-serif; //primary
+}
+
+@each $elem, $value in s.$font-size {
+  @each $type, $size in $value {
+    @if ($elem == small) {
+      #{$type} {
+        font-size: $size;
+      }
+    } @else if($elem != small) {
+      @include m.breakpoint(#{$elem}) {
+        #{$type} {
+          font-size: $size;
+        }
+      }
+    }
+  }
+}
