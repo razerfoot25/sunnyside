@@ -1,0 +1,69 @@
+@use "../abstracts/functions" as f;
+.footer {
+  background: f.color(primary, 700);
+  padding-block: 3.5em;
+  &__logo {
+    &--svg {
+      margin-inline: auto;
+      width: 180px;
+      height: 70px;
+      background: f.color(primary, 500);
+      mask: url("../images/logo.svg");
+      mask-repeat: no-repeat;
+      mask-size: contain;
+    }
+  }
+  &__nav {
+    display: flex;
+    gap: 3.5em;
+    padding: 0 0 5em 0;
+    margin: 0;
+    justify-content: center;
+    a {
+      color: f.color(primary, 500);
+
+      &:hover {
+        color: f.color(neutral, 300);
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 1.5em;
+    span {
+      display: inline-block;
+      background: f.color(primary, 500);
+      mask-repeat: no-repeat;
+      mask-size: contain;
+      width: 20px;
+      height: 20px;
+
+      &:hover {
+        background: f.color(neutral, 300);
+      }
+    }
+
+    &--icons {
+      &-1 {
+        mask: url("../images/assets/icon-facebook.svg");
+      }
+
+      &-2 {
+        mask: url("../images/assets/icon-instagram.svg");
+      }
+
+      &-3 {
+        mask: url("../images/assets/icon-twitter.svg");
+      }
+
+      &-4 {
+        mask: url("../images/assets/icon-pinterest.svg");
+      }
+    }
+  }
+}
