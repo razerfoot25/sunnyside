@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="images/favicon-32x32.png"
+      href="images/assets/favicon-32x32.png"
     />
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main class="landing-page container">
-      <header>
+    <main role="main" class="landing-page container">
+      <header role="navigation">
         <div class="logo"><img src="/images/assets/logo.svg" alt="logo" /></div>
 
         <div class="hamburger">
@@ -35,16 +35,24 @@
           <ul class="navbar" role="list">
             <span class="navbar__border"></span>
             <li class="navbar__list">
-              <a href="#"><span class="navbar__list--title">About</span></a>
+              <a href="#" aria-label="about"
+                ><span class="navbar__list--title">About</span></a
+              >
             </li>
             <li class="navbar__list">
-              <a href="#"><span class="navbar__list--title">Services</span></a>
+              <a href="#" aria-label="services"
+                ><span class="navbar__list--title">Services</span></a
+              >
             </li>
             <li class="navbar__list">
-              <a href="#"><span class="navbar__list--title">Projects</span></a>
+              <a href="#" aria-label="projects"
+                ><span class="navbar__list--title">Projects</span></a
+              >
             </li>
             <li class="navbar__list">
-              <a href="#"><span class="navbar__list--btn btn">Contact</span></a>
+              <a href="#" aria-label="contacts"
+                ><span class="navbar__list--btn btn">Contact</span></a
+              >
             </li>
           </ul>
         </nav>
@@ -55,7 +63,7 @@
         <img src="/images/assets/icon-arrow-down.svg" alt="arrow down" />
       </div>
     </main>
-    <section class="services container">
+    <section role="contentinfo" class="services container">
       <section class="services__section-1">
         <div class="services__section-1--textarea">
           <h2>Transform your brand</h2>
@@ -64,7 +72,11 @@
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          <a href="" class="services__section-1--textarea-link link">
+          <a
+            href=""
+            aria-label="Read more about full-service creative agency"
+            class="services__section-1--textarea-link link"
+          >
             Learn more
           </a>
         </div>
@@ -80,7 +92,12 @@
             photographers, videographers, and copywriters, we’ll build and
             extend your brand in digital places.
           </p>
-          <a href="" class="services__section-2--textarea-link link">
+          <a
+            href=""
+            aria-label="Read more about  Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters"
+            class="services__section-2--textarea-link link"
+          >
             Learn more</a
           >
         </div>
@@ -107,7 +124,7 @@
       </section>
     </section>
 
-    <section class="projects container">
+    <section role="contentinfo" class="projects container">
       <h6>Client testimonials</h6>
       <section class="projects__testimonials">
         <article class="projects__testimonials--card">
@@ -172,33 +189,41 @@
       </section>
     </section>
 
-    <footer class="footer">
+    <footer role="navigation" class="footer">
       <div class="footer__logo">
         <div class="footer__logo--svg"></div>
       </div>
       <ul class="footer__nav" role="list">
         <li>
-          <a href=""><span> About</span></a>
+          <a href="#" aria-label="About"><span> About</span></a>
         </li>
         <li>
-          <a href=""><span>Services</span></a>
+          <a href="#" aria-label="Services"><span>Services</span></a>
         </li>
         <li>
-          <a href=""><span>Projects</span></a>
+          <a href="#" aria-label="Projects"><span>Projects</span></a>
         </li>
       </ul>
       <ul class="footer__contacts">
         <li>
-          <a href=""><span class="footer__contacts--icons-1"></span></a>
+          <a href="#" aria-label="Social Media Links"
+            ><span class="footer__contacts--icons-1"></span
+          ></a>
         </li>
         <li>
-          <a href=""><span class="footer__contacts--icons-2"></span></a>
+          <a href="#" aria-label="Social Media Links"
+            ><span class="footer__contacts--icons-2"></span
+          ></a>
         </li>
         <li>
-          <a href=""><span class="footer__contacts--icons-3"></span></a>
+          <a href="#" aria-label="Social Media Links"
+            ><span class="footer__contacts--icons-3"></span
+          ></a>
         </li>
         <li>
-          <a href=""><span class="footer__contacts--icons-4"></span></a>
+          <a href="#" aria-label="Social Media Links"
+            ><span class="footer__contacts--icons-4"></span
+          ></a>
         </li>
       </ul>
     </footer>
