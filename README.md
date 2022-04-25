@@ -41,6 +41,6 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yrazerfoot25](https://www.frontendmentor.io/profile/razerfoot25)
+- Frontend Mentor - [@razerfoot25](https://www.frontendmentor.io/profile/razerfoot25)
 
 
