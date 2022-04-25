@@ -8,13 +8,9 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 
 ## Overview
@@ -33,24 +29,18 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://demo-sunnyside.netlify.app/)
-- Live Site URL: [Add live site URL here](https://demo-sunnyside.netlify.app/)
+- Solution URL: [https://demo-sunnyside.netlify.app/]
+- Live Site URL: [https://demo-sunnyside.netlify.app/]
 
-## My process
 
 ### Built with
-
 
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 
-
-
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@yrazerfoot25](https://www.frontendmentor.io/profile/razerfoot25)
+
 
